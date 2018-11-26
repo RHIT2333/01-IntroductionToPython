@@ -25,7 +25,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ###############################################################################
 
-import rosegraphics as rg
+
 
 ###############################################################################
 #
@@ -45,6 +45,8 @@ import rosegraphics as rg
 #   change this _TODO_ to DONE and  ** continue to the next _TODO_ (below). **
 #
 ###############################################################################
+
+import rosegraphics as rg
 
 ###############################################################################
 #
@@ -166,12 +168,6 @@ plos.speed = 10
 #
 ###############################################################################
 
-kelly = rg.SimpleTurtle()
-kelly.forward(200)
-kelly.left(90)
-kelly.forward(70)
-kelly.speed = 7
-
 fuzzy = rg.SimpleTurtle('turtle')
 fuzzy.pen = rg.Pen('blue', 10)
 fuzzy.speed = 5
@@ -185,7 +181,7 @@ fuzzy.go_to(rg.Point(-300, 150))
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
