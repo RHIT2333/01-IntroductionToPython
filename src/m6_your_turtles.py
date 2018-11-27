@@ -29,5 +29,29 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ########################################################################
 import rosegraphics as rg
-window = rg.TurtleWindow
+window = rg.TurtleWindow()
+ojbk = rg.SimpleTurtle('turtle')
+xjbg = rg.SimpleTurtle('turtle')
+ojbk.pen = rg.Pen('red', 1)
+xjbg.pen = rg.Pen('blue', 1)
+ojbk.speed = 20
+xjbg.speed = 20
 
+sizek = 385
+sizex = 10
+
+for k in range(16):
+    ojbk.draw_square(sizek)
+    ojbk.pen_up()
+    ojbk.right(6)
+    ojbk.pen_down()
+    sizek = sizek - 25
+
+for j in range(16):
+    xjbg.draw_square(sizex)
+    xjbg.pen_up()
+    xjbg.left(6)
+    xjbg.pen_down()
+    sizex = sizex + 25
+
+window.close_on_mouse_click()
